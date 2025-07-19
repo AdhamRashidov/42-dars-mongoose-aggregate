@@ -5,7 +5,7 @@ const CommentSchema = new Schema(
         video_id: { type: Schema.Types.ObjectId, ref: 'Video' },
         user_id: { type: Schema.Types.ObjectId, ref: 'User' },
         text: { type: String },
-        likes: { type: String }
+        likes: { type: Number }
     },
     {
         timestamps: true,
